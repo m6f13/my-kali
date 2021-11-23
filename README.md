@@ -22,6 +22,22 @@ dirb: find files and directories
 ````shell
 dirb domain.com [wordlist] [options]
 ````
+crunch: create word list
+````shell
+crunch [min] [max] [characters] -t [pattern] -o [FileName]
+````
+rainbowcrack: charset.txt in /usr/share/rainbowcrack/charset.txt
+````shell
+crunch 4 6 -f /usr/share/rainbowcrack/charset.txt mixalpha -o wordlist.txt
+````
+hydra: is a bruteforce tool
+capital L or P is when linking to a file
+````shell
+hydra [IP] -L [usernames.txt] -P [passwords.txt] [service]
+hydra [IP] -l username -p password [service]
+````
+
+
 
 ---
 

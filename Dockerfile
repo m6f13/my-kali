@@ -26,6 +26,9 @@ RUN apt -y install pciutils usbutils
 
 # Install additional tools
 RUN apt -y install knockpy \
-    dirb
+    dirb \
+    crunch \
+    hydra \
+    rainbowcrack
 
 ENTRYPOINT ["/bin/bash"]
